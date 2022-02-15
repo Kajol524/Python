@@ -1,0 +1,212 @@
+
+#smallest no.
+a=6
+b=9
+def small_num():
+    if a<b:
+        print(a, "is smaller number")
+    else:
+        print(b, "is smaller number")
+small_num()
+
+#even number
+def even():
+    i=1
+    while i<=10:
+        if i%2==0:
+            print(i)
+        i+=1
+even()
+
+#natural number
+def natural():
+    i=1
+    while i<=10:
+        print(i)
+        i+=1
+natural()
+
+#odd number
+def odd():
+    i=1
+    while i<=10:
+        if i%2!=0:
+            print(i)
+        i+=1
+odd()
+
+#print individual digit
+def ind():
+    a=int(input("Enter the number: "))
+    while a!=0:
+        d=a%10
+        print(d)
+        a=a//10
+ind()
+
+
+#print reverse of given number
+def rev():
+    a=int(input("Enter the number: "))
+    rev=0
+    while a!=0:
+        d=a%10
+        rev=rev*10+d
+        a=a//10
+    print(rev)
+rev()
+
+
+#Armstrong
+def armstrong():
+    a=int(input("Enter the number: "))
+    sum=0
+    temp=a
+    while a!=0:
+        d=a%10
+        sum=sum+d**3
+        a=a//10
+    if sum==temp:
+        print("Its armstrong")
+    else:
+        print("Its not armstrong")
+armstrong()
+
+    
+#Show 1 to 1000 armstrong number
+def armstrong():
+    for a in range(1001):
+        sum=0
+        temp=a
+        while a!=0:
+            d=a%10
+            sum=sum+d**3
+            a=a//10
+        if sum==temp:
+            print("{} number is armstrong".format(temp))
+armstrong()
+
+
+#Palindrome
+
+def palindrome():
+    a=int(input("Enter the number: "))
+    rev=0
+    temp=a
+    while a!=0:
+        d=a%10
+        rev=rev*10+d
+        a=a//10
+    if rev==temp:
+        print("{} is palindrome".format(temp))
+    else:
+        print("{} is not palindrome".format(temp))
+palindrome()
+
+
+#show plaindrome number beetween 100 to 1000
+def palindrome():
+    for a in range(100,999):
+        rev=0
+        temp=a
+        while a!=0:
+            d=a%10
+            rev=rev*10+d
+            a=a//10
+        if rev==temp:
+            print("{} is palindrome".format(temp))
+palindrome()
+
+
+#Sum of individual digit
+def ind():
+    a=int(input("Enter the number: "))
+    sum=0
+    while a!=0:
+        d=a%10
+        sum=sum+d
+        a=a//10
+    print(sum)
+ind()
+
+
+#Factorial
+def fact():
+    a=int(input("Enter the number: "))
+    fact=1
+    while a!=0:
+        fact=fact*a
+        a=a-1
+    print(fact)
+fact()
+
+
+#Multiplication table
+def mul():
+    a=int(input("Enter the number: "))
+    i=1
+    while i<=10:
+        print(a*i)
+        i+=1
+mul()
+
+
+
+#1+3+5+.....
+def add():
+    a=2
+    i=1
+    sum=0
+    while i<=10:
+        d=(a*i)-1
+        sum=sum+d
+        i+=1
+    print(sum)        
+add()
+
+
+
+#check entered number is prime or not?
+def prime():
+    a=int(input("Enter the number: "))
+    count=0
+    i=1
+    while i<=a:
+        if a%i==0:
+            count=count+1
+        i+=1
+    if count==2:
+        print("Its prime number")
+    else:
+        print("Its not prime number")
+prime()
+
+
+#Display all prime number between [0 to 1000]
+def prime():
+    for a in range(101):
+        count=0
+        i=1
+        while i<=a:
+            if a%i==0:
+                count=count+1
+            i+=1
+        if count==2:
+            print(a)
+prime()
+
+
+#Display fibonacci series
+def fibo():
+    a=int(input("Enter the number: "))
+    a1=0
+    a2=1
+    i=0
+    while i<=a:
+        print(a1)
+        a3=a1+a2
+        a1=a2
+        a2=a3
+        i+=1
+fibo()
+        
